@@ -10,7 +10,7 @@ TOC
 #### 4. [Acceptance criteria](#head4)
 
 ### <a name="head1"></a> 1. INTRODUCTION
-This project aims at providing an Arrow connector, that give access to  a common interface to query wordpress.com API.
+This project aims at providing an Arrow connector, that give access to  a common interface to query stackoverflow.com API.
 
 The Connector handles authentication process.
 
