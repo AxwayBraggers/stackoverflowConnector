@@ -65,7 +65,7 @@ module.exports = {
 		// when in production (still respects enabled above)
 		enableAdminInProduction: true,
 		// set the email addresses you want to be able to log in to the admin website
-		validEmails: ["mvasilev@axway.com"],
+		validEmails: ["mvasilev@axway.com", "t.popov94@gmail.com", "mmzarkov@gmail.com", "guldjan.kupen@gmail.com"],
 		// set the organization ids you want to be able to log in to the admin website
 		validOrgs: [100094705]
 	},
@@ -86,5 +86,9 @@ module.exports = {
 
 	// your connector configuration goes here
 	connectors: {
+		'com.axway.braggers.stackoverflow': {
+			modelAutogen: true,
+			stackExchangeApiUrl: 'https://api.stackexchange.com/2.2/'
+		}
 	}
 };
