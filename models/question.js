@@ -3,12 +3,12 @@ var Arrow = require('arrow');
 // TODO: Rename "yourModel" (and this file) to whatever you want.
 module.exports = Arrow.Model.extend('question', {
 	fields: {
-		ID: {type: Number, required: true},
-		tags: {type: Array, required: true},
-		display_name: {type: String},
+		question_id: {type: String, required: true},
+		owner: {type: Object, required: true},
 		title: {type: String, required: true},
-        questionId: {type: Number, required: true},
-        answers: {type: Number},
-        url: {type: String}
+		body_markdown: {type: String, required: true},
+		answers: {type: Array},
+		tags: {type: Array},
+
 	}
 });
