@@ -14,4 +14,14 @@ server.addModel(Arrow.Model.extend('tbray', {
 	connector: 'com.axway.braggers.stackoverflow'
 }));
 
+
+server.on("starting", function() {
+    server.port = 8989;
+});
+
+server.on("started", function() {
+    var connector = Arrow.getConnector('com.axway.braggers.stackoverflow');
+});
+
 server.start();
+
